@@ -3,8 +3,8 @@
 API:
 
 
-Get Short url for long url and client id
+Get Short url for long url and client id \n
 localhost:8082/getShortenedUrl/{longUrl}/{clientId}
 
-Get long url for short url
+Get long url for short url \n
 localhost:8082/getLongUrl/{shortUrl}
