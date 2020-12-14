@@ -11,7 +11,7 @@ var counter *globalCounter
 
 func(cnt *globalCounter) incrementAndGet() int64{
 	cnt.mu.Lock()
-	cnt.mu.Unlock()
+	defer cnt.mu.Unlock()
 
 	cnt.cnt +=1
 	return cnt.cnt
